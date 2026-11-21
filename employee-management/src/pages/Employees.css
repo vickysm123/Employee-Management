@@ -1,0 +1,32 @@
+
+.employees-section {
+  margin-top: 40px;
+}
+
+.employees-section h1 {
+  margin-bottom: 20px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.employee-table th {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.employee-table td {
+  color: #334155;
+}
