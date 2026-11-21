@@ -1,6 +1,6 @@
 import './App.css'
 import Dashboard from './pages/Dashboard.jsx'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import Header from './components/Header'
 import Employees from './pages/Employees'
 function App() {
