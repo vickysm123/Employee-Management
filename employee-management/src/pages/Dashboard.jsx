@@ -1,4 +1,4 @@
-import StatCard from "../components/Statcard"
+import StatCard from "../components/StatCard"
 import './Dashboard.css'
 function Dashboard() {
   return (
