@@ -1,5 +1,5 @@
 import './App.css'
-import Dashboard from './pages/dashboard'
+import Dashboard from './pages/Dashboard.jsx'
 import Sidebar from './components/sidebar'
 import Header from './components/Header'
 import Employees from './pages/Employees'
