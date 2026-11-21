@@ -51,6 +51,7 @@ function Employees() {
 
       <input
         type="text"
+        className='searchbox'
         placeholder="Search employees..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -82,5 +83,5 @@ function Employees() {
     </div>
   )
 }
-
+    
 export default Employees

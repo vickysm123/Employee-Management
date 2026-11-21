@@ -17,7 +17,7 @@
 
 .employee-table th,
 .employee-table td {
-  padding: 16px;
+  padding: 18px;
   text-align: left;
   border-bottom: 1px solid #e2e8f0;
 }
@@ -29,4 +29,11 @@
 
 .employee-table td {
   color: #334155;
+}
+.searchbox{
+    height: 35px;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #1e293bd6;
+    border-radius: 10px;
 }
