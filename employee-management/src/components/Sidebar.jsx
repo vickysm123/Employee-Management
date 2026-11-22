@@ -2,7 +2,7 @@ import './Sidebar.css'
 function Sidebar() {
   return (
     <aside className='sidebar'>
-      <h2>Employment</h2>
+      <h2><span className='span_side'>E</span>mployment</h2>
       <nav>
         <ul>
           <li>Dashboard</li>

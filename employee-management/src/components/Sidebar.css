@@ -15,12 +15,18 @@
 }
 
 .sidebar li {
-  padding: 14px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  border-radius: 6px;
+  padding: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    border-bottom: 1px solid #fff;
+
 }
 
 .sidebar li:hover {
   background-color: #334155;
+}
+.span_side{
+        color: #9d3dfb;
+    font-size: 30px;
 }
