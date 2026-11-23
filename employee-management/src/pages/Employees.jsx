@@ -63,7 +63,7 @@ const [employees, setEmployees] = useState([
     <div className="employee-form">
 
       <div className="form-header">
-        <h2 className='form_head'>Add New Employee</h2>
+        <h2 className='form_head'>Add Employee</h2>
 
         <button
           className="close-btn"
@@ -79,7 +79,7 @@ const [employees, setEmployees] = useState([
       <input type="text" placeholder="Designation" />
 
       <button className="submit-btn">
-        Add Employee
+        Add
       </button>
 
     </div>
