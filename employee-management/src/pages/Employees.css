@@ -36,4 +36,42 @@
     margin-bottom: 18px;
     border: 1px solid #1e293bd6;
     border-radius: 10px;
+    margin-left: 20px;
+}
+
+.delete_btn{
+        padding: 10px;
+    border-radius: 9px;
+     border: 1px solid #1e293b;
+     background-color: #f8fafc;
+    color: #1e293b;
+    width: 85px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+     transition: all 0.3s ease;
+}
+.delete_btn:hover{
+        background: #152031;
+        color: #fff;
+         transform: translateY(-2px);
+}
+.add-employee-btn {
+     background-color: #f8fafc;
+    color: #1e293b;
+    padding: 8px 43px;
+    border: 1px solid #1e293b;
+    border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 14px;
+     transition: all 0.3s ease;
+}
+
+.add-employee-btn:hover {
+  background-color: #1d4ed8;
+   background: #152031;
+   color: #fff;
+         transform: translateY(-2px);
 }

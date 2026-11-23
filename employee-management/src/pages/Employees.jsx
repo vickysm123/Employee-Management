@@ -1,8 +1,10 @@
-
 import { useState } from 'react'
 import './Employees.css'
 
-const employees = [
+
+
+function Employees() {
+const [employees, setEmployees] = useState([
   {
     id: 1,
     name: 'Arun Kumar',
@@ -35,20 +37,32 @@ const employees = [
     designation: 'Frontend Developer',
     status: 'Active'
   }
-]
-
-function Employees() {
-
+])
   const [search, setSearch] = useState('')
 
   const filteredEmployees = employees.filter((employee) =>
     employee.name.toLowerCase().includes(search.toLowerCase())
   )
-
+ const deleteEmployee = (id)=>{
+    setEmployees((prevEmployee)=>(
+     prevEmployee.filter((employee)=> employee.id !== id)
+    ))
+ }
+ const [showForm, setShowForm] = useState(false)
   return (
     <div className="employees-section">
-      <h1>Employees</h1>
-
+      <h1>Employees List</h1>
+     <button
+  className="add-employee-btn"
+  onClick={() => setShowForm(!showForm)}
+>
+  + Add Employee
+</button>
+{showForm && (
+  <div>
+    <h2>Add New Employee</h2>
+  </div>
+)}
       <input
         type="text"
         className='searchbox'
@@ -65,6 +79,7 @@ function Employees() {
             <th>Department</th>
             <th>Designation</th>
             <th>Status</th>
+            <th>Action</th>
           </tr>
         </thead>
 
@@ -76,6 +91,7 @@ function Employees() {
               <td>{employee.department}</td>
               <td>{employee.designation}</td>
               <td>{employee.status}</td>
+              <td><button className='delete_btn' onClick={()=> deleteEmployee(employee.id)}>Delete</button></td>
             </tr>
           ))}
         </tbody>
