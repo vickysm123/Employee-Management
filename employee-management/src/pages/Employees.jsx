@@ -59,8 +59,30 @@ const [employees, setEmployees] = useState([
   + Add Employee
 </button>
 {showForm && (
-  <div>
-    <h2>Add New Employee</h2>
+  <div className="modal-overlay">
+    <div className="employee-form">
+
+      <div className="form-header">
+        <h2 className='form_head'>Add New Employee</h2>
+
+        <button
+          className="close-btn"
+          onClick={() => setShowForm(false)}
+        >
+          ×
+        </button>
+      </div>
+
+      <input type="text" placeholder="Employee Name" />
+      <input type="email" placeholder="Email" />
+      <input type="text" placeholder="Department" />
+      <input type="text" placeholder="Designation" />
+
+      <button className="submit-btn">
+        Add Employee
+      </button>
+
+    </div>
   </div>
 )}
       <input
